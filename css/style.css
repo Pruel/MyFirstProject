@@ -20,12 +20,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
     background-color: orangered;
-    min-width: 200px;
+    min-width: 199px;
+    padding: 12px 45px; 
+    margin-top: 25px;
+    
+    
 }
 /* Header start */
 .header {
@@ -128,6 +135,6 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 48px;
     font-weight: 700;
     color: #fff;
-    line-height: 1.5;
+    line-height: 1.1;
 }
 /* Intro end */
