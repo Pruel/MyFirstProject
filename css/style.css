@@ -30,9 +30,11 @@ h1,h2,h3,h4,h5,h6 {
     background-color: orangered;
     min-width: 199px;
     padding: 12px 45px; 
-    margin-top: 25px;
-    
-    
+    margin-top: 25px;    
+}
+
+p {
+    margin: 0 0 5px;
 }
 /* Header start */
 .header {
@@ -51,6 +53,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .header__block {
     width: 28%
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.header__logo img {
+    height: 65px;
 }
 
 .nav {
@@ -103,7 +113,13 @@ h1,h2,h3,h4,h5,h6 {
     color: #b7b7b7;
     text-transform: uppercase;
     text-decoration: none;
+    transition: color .4s ease;
 }
+
+.header__lng-link:hover {
+    color: #fff;
+}
+
 
 .header__lng-link:last-child {
     margin-right: 0;
@@ -117,7 +133,9 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Intro start */
 .intro {
-    background: url('../img/intro_bg.jpg'); 
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
 }
 
 .intro__content {
@@ -138,3 +156,96 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.1;
 }
 /* Intro end */
+
+.section {
+    margin-bottom: 100px;
+}
+
+/* Info start */
+.info {
+    transform: translateY(-50%);
+}
+
+.info__wrapper {
+    display: flex;
+    margin: 0 -25px;
+}
+
+.info__block {
+    width: 33.33%;
+    padding: 0 18px;
+}
+
+.info__item {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); 
+    padding: 40px 40px 20px;
+    
+}
+
+.info__img {
+    margin-bottom: 20px;
+}
+
+.info__img img {
+    height: 30px;
+}
+
+.info__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 0.041em;
+}
+
+.info__text {
+    font-size: 18px;
+    color: #B7B7B7;
+}
+/* Info end */
+
+/* block start */
+.block__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.14em;
+}
+
+.block__link {
+    display: inline-block;
+    letter-spacing: 0.14em;
+    color:black;
+    text-decoration-line: underline;
+    margin-bottom: 60px;
+}
+
+.block__link:hover {
+    text-decoration: none;
+
+}
+/* block end */
+/* services start */
+.services__item {
+
+}
+
+.services__content {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    background-size: cover;
+    position: relative;
+}
+
+.services__title {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.20em;
+    padding-top: 500px;
+}
+
+.services__text {
+    opacity: 0;
+}
+/* services end */
